@@ -8,7 +8,7 @@ function SearchBar({ setJobs }) {
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:8000/api/search_jobs/?job_title=${jobTitle}`
+        `https://backend-jobscraper.onrender.com/api/search_jobs/?job_title=${jobTitle}`
       );
       const data = await response.json();
 
